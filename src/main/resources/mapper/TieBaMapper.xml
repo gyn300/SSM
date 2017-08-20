@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jee.mapper.TieBaMapper">
+
+
+    <!-- useGeneratedKeys="true"把新增加的主键赋值到自己定义的keyProperty（id）中 -->
+    <insert id="insertTieba" parameterType="tieBa" >
+         insert into tieba(intro,logo,name,followers,postCount)
+         values(#{intro},#{logo},#{name},#{followers},#{postCount});
+    </insert>
+
+    <select id="getTieBa" parameterType="long" resultType="TieBa">
+          select * from tieba where id=#{id}
+    </select>
+
+</mapper>

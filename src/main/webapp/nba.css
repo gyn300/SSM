@@ -1,0 +1,28 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-size: 13px;
+    font-family: Arial;
+
+
+}
+
+#container{
+    padding-top: 100px;
+    width: 1200px;
+    height: 900px;
+    margin: 10px auto;
+    text-align: left;
+
+
+}
+tr{
+    height: 50px;
+}
+#logo{
+    margin-left:150px ;
+}
+div{
+    margin-top: 20px;
+    margin-left: 10px;
+}
